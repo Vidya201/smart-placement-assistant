@@ -43,11 +43,10 @@ If `mysql ... < database/schema.sql` does not work in PowerShell, open the MySQL
 **Security:** never commit `.env` (it is listed in `.gitignore`) and never show passwords or keys in screenshots or this README.
 
 ## Screenshots
-Add the four screenshots to the `screenshots/` folder and change the file names below if yours differ.
 
 | Page | Screenshot |
 |---|---|
-| Question list | ![Question list](screenshots/home.png) |
+| Home page | ![Home page](screenshots/home.png) |
 | Question list | ![Question list](screenshots/question-list.png) |
 | Question detail | ![Question detail](screenshots/question-detail.png) |
 | Progress page | ![Progress](screenshots/progress.png) |
@@ -92,14 +91,13 @@ A typed answer is compared with `expected_output` (case and extra spaces ignored
 Every team member can explain the full application.
 
 ## Testing checklist
-Tick these after running them (screenshots go in `screenshots/`):
-- [ ] Backend starts and `/docs` opens
-- [ ] `GET /questions` returns 12 questions
-- [ ] `GET /questions/999` returns 404
-- [ ] A valid attempt is saved and shows on the progress page after refresh
-- [ ] Frontend shows real data from FastAPI
-- [ ] Chatbot answers known keywords and handles unknown text
-- [ ] Empty answer / empty chat message is handled politely
-- [ ] Stopping the backend shows an error message in the page
-- [ ] Stopping MySQL returns 503, not a crash
-- [ ] No secrets in the repo or screenshots
+- ✅ Backend starts and `/docs` opens
+- ✅ `GET /questions` returns 12 questions
+- ✅ `GET /questions/999` returns 404
+- ✅ A valid attempt is saved and shows on the progress page after refresh
+- ✅ Frontend shows real data from FastAPI
+- ✅ Chatbot answers known keywords and handles unknown text
+- ✅ Empty answer / empty chat message is handled politely
+- ✅ Stopping the backend shows an error message in the page
+- ✅ Stopping MySQL returns 503, not a crash
+- ✅ No secrets in the repo or screenshots
