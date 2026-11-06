@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progress | Placement Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="progress">
+<header class="top">
+  <strong>Placement Assistant</strong>
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="questions.html" >Questions</a>
+    <a href="progress.html" aria-current="page">Progress</a>
+    <a href="chatbot.html" >Chatbot</a>
+  </nav>
+</header>
+<main>
+<h1>Your progress</h1>
+<p class="lead">A summary of every attempt saved in the database.</p>
+<div id="error" class="msg" hidden></div>
+<div id="stats" class="stats"><p class="empty">Loading...</p></div>
+<div class="card scroll">
+  <h2>Recent attempts</h2>
+  <table><thead><tr><th>Question</th><th>Score</th><th>Status</th><th>When</th></tr></thead>
+  <tbody id="recent"></tbody></table>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

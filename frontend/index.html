@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Placement Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<header class="top">
+  <strong>Placement Assistant</strong>
+  <nav>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="questions.html" >Questions</a>
+    <a href="progress.html" >Progress</a>
+    <a href="chatbot.html" >Chatbot</a>
+  </nav>
+</header>
+<main>
+<h1>Practise Python for placement interviews</h1>
+<p class="lead">Solve questions, record your attempts, track your score and ask the chatbot quick technical questions.</p>
+<div id="status" class="msg" hidden></div>
+<div class="grid" style="margin-top:18px">
+  <a class="card tile" href="questions.html"><h2>Questions</h2><p>Browse by topic and difficulty, then submit an answer.</p></a>
+  <a class="card tile" href="progress.html"><h2>Progress</h2><p>See attempts, completed questions and your average score.</p></a>
+  <a class="card tile" href="chatbot.html"><h2>Chatbot</h2><p>Ask about Python, APIs, FastAPI, MySQL and interviews.</p></a>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

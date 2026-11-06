@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chatbot | Placement Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="chatbot">
+<header class="top">
+  <strong>Placement Assistant</strong>
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="questions.html" >Questions</a>
+    <a href="progress.html" >Progress</a>
+    <a href="chatbot.html" aria-current="page">Chatbot</a>
+  </nav>
+</header>
+<main>
+<h1>Chatbot</h1>
+<p class="lead">Answers come from predefined rules, so it only knows a fixed set of topics. Treat answers as suggestions, not guaranteed interview advice.</p>
+<div class="card" style="padding:0"><div id="log" class="chatlog" aria-live="polite"></div></div>
+<form id="chatform" class="chatform">
+  <input type="text" id="message" aria-label="Your message" placeholder="Ask a question, or type help" autocomplete="off" maxlength="500">
+  <button type="submit">Send</button>
+</form>
+<div class="chips">
+  <button class="secondary" type="button" data-ask="What is FastAPI?">What is FastAPI?</button>
+  <button class="secondary" type="button" data-ask="What is a REST API?">What is a REST API?</button>
+  <button class="secondary" type="button" data-ask="Explain MySQL">Explain MySQL</button>
+  <button class="secondary" type="button" data-ask="help">help</button>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

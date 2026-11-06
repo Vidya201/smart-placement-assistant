@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questions | Placement Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="questions">
+<header class="top">
+  <strong>Placement Assistant</strong>
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="questions.html" aria-current="page">Questions</a>
+    <a href="progress.html" >Progress</a>
+    <a href="chatbot.html" >Chatbot</a>
+  </nav>
+</header>
+<main>
+<h1>Questions</h1>
+<p class="lead">Pick a question, work it out in Python, then enter the output your code prints for the sample input.</p>
+<div class="filters">
+  <select id="category" aria-label="Filter by category"><option value="">All categories</option></select>
+  <select id="difficulty" aria-label="Filter by difficulty">
+    <option value="">All difficulties</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option>
+  </select>
+</div>
+<div class="layout">
+  <ul id="qlist" class="qlist"></ul>
+  <section id="detail" class="card" aria-live="polite"><p class="empty">Select a question to see its details.</p></section>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
